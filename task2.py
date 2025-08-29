@@ -11,13 +11,14 @@ read=readfile.read().strip()
 
 if read==user_input:
     print("Data successfully written to output.txt")
+    print()
 readfile.close()
 
 
 ###append
 appendfile=open("output.txt","a")
 
-user_input2=input("enter additional text to write the file: ")
+user_input2=input("enter additional text to append: ")
 
 append=appendfile.write( user_input2 + "\n")
 
@@ -30,6 +31,7 @@ read=readfile1.read().strip()
 
 if user_input2 in read:
     print("Data successfully appended to output.txt")
+    print()
 readfile1.close()
 
 
